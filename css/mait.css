@@ -24,15 +24,31 @@ body {
 }
 
 .page__nav {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .page__link {
-  color: #000;
+  color: #e0c129;
   font-family: 'Roboto';
-  font-size: 60px;
+  font-size: 24px;
   font-weight: 700;
+  transition: color 0.2s ease;
 }
+
+.page__link--active {
+  font-size: 48px;
+  color: #e0c129;
+}
+
+.page__link:hover {
+  color: #e0c12986;
+}
+
 
 .dark-mode-btn {
   display: flex;
