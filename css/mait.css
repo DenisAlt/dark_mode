@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  transition: 0.4s ease;
+  /* transition: 0.4s ease; */
 }
 
 .container {
@@ -21,6 +21,17 @@ body {
   font-weight: 700;
   font-size: 120px;
   color: #161616;
+}
+
+.page__nav {
+  margin-bottom: 15px;
+}
+
+.page__link {
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .dark-mode-btn {
@@ -61,14 +72,14 @@ body {
   height: 90px;
   border-radius: 19px;
   left: 1px;
-  transition: left 0.4s ease-in-out;
+  transition: left 0.3s ease-in-out;
   border: 6px solid #000;
   background-color: #e0c129;
 }
 
 .dark-mode-btn__switch--on {
   left: 77px;
-  transition: left 0.25s ease-in-out;
+
 }
 
 .dark-mode-btn--on {
