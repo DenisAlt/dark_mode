@@ -1,0 +1,76 @@
+@import url(../css/reset.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 0.4s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 120px;
+  color: #161616;
+}
+
+.dark-mode-btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+  align-items: center;
+  width: 180px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  border: 6px solid #000;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease;
+}
+
+.dark-mode-btn:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.772);
+}
+
+.dark-mode-btn__icon {
+  width: 55px;
+  height: 55px;
+  z-index: 2;
+  color: rgba(19, 2, 2, 0.21);
+}
+
+.dark-mode-btn__icon:first-child {
+  margin-right: 11px;
+}
+
+.dark-mode-btn__switch {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 19px;
+  left: 1px;
+  transition: left 0.4s ease-in-out;
+  border: 6px solid #000;
+  background-color: #e0c129;
+}
+
+.dark-mode-btn__switch--on {
+  left: 77px;
+  transition: left 0.25s ease-in-out;
+}
+
+.dark-mode-btn--on {
+  background-color: #0b1b3173;
+}
